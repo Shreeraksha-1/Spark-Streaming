@@ -29,7 +29,7 @@ object StreamingApp {
     spark.sparkContext.setLogLevel("WARN")
 
     // Define the streaming source
-    val streamingFiles = spark.readStream.text("C:\\Users\\SHREERAKSHA\\Documents\\Spark-Streaming")
+    val streamingFiles = spark.readStream.text("C:\\Documents\\Spark-Streaming")
 
     // Define the query to write to the console
     val query = streamingFiles.writeStream
